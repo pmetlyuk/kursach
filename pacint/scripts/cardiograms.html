@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html xmlns:margin-top="http://www.w3.org/1999/xhtml">
 <head>
-    <link rel="stylesheet" href="Styles/head.css">
+    <link rel="stylesheet" href="../Styles/head.css">
     <meta charset="utf-8">
     <div id="header">
         <div id="text"> Добро пожаловать
             <form name="navigation">
                 &emsp;&emsp;
-                <a href="homepage.html">Домашняя страница</a> &emsp;
-                <a href="visitdoctor.html"> посещения врача</a>&emsp;
-                <a href="kardiograms.html"> Кардиограммы</a>&emsp;
-                <a href="therapy.html"> Назначенное лечение</a>&emsp;&emsp;&emsp;&emsp;
-                <a href="autorisation.html"> Выход </a></form>
+                <a href="../homepage.html">Домашняя страница</a> &emsp;
+                <a href="../visitdoctor.html"> посещения врача</a>&emsp;
+                <a href="cardiograms.html"> Кардиограммы</a>&emsp;
+                <a href="../therapy.html"> Назначенное лечение</a>&emsp;&emsp;&emsp;&emsp;
+                <a href="../autorisation.html"> Выход </a></form>
         </div>
     </div>
 </head>
 <body>
 <div id="search" align="center"> Поиск кардиограммы</div>
-<form name="search_of_kardiograms">
+<form name="search_of_cardiograms">
     Имя:
     <p><input type="text" name="Name" placeholder="Введите имя"></p>
     Фамилия:
@@ -28,12 +28,13 @@
     <p><input type="date" name="date_for" placeholder="Выберите дату "></p>
     Дата по:
     <p><input type="date" name="date_to" placeholder="Выберите дату "></p>
-    <p><input type="button" value="Поиск"></p>
+    <p><input type="button" value="Поиск" onclick="GetPacients()"></p>
 </form>
 <div id="result_of_search" align="center"> Кардиограммы</div>
 
-<form name="result_ of_search">
-<!--    тут скрипт будет выводить их в каком-то формате (если смогу, сделаю таблицу)-->
+<form name="messages">
+    <p id = "out">sfdagasfdg</p>
 </form>
+    <script src="cardiograms.js"></script>
 </body>
 </html>
